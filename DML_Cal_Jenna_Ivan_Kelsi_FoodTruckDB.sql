@@ -31,7 +31,7 @@ VALUES ('Taco', 1, 4.99, 'Food', '2024-08-07', null),
 ('Horchata', 1, 2.99, 'Drink', '2024-08-07', null),
 ('Mexican Coke', 1, 2.99, 'Drink', '2024-08-07', null);
 
---Shift, Pruchase and Line Item values are AI generated to give enough data for us to analyze
+--Shift, Purchase and Line Item values are AI generated to give enough data for us to analyze
 --Shifts start at 10 and end at 2:30 for prep and cleanup time, workers come in and clock out within 5 min of their assigned shift
 --All comments after this point are AI explaining the data it is inserting into tables, not us explaining db architecture. 
 
