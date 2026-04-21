@@ -39,7 +39,7 @@ VALUES
 ('Mexican Coke', 1, 2.99, 'Drink', '2024-08-07', null);
 GO
 
---Shift, Pruchase and Line Item values are AI generated to give enough data for us to analyze
+--Shift, Purchase and Line Item values are AI generated to give enough data for us to analyze
 --Shifts start at 10 and end at 2:30 for prep and cleanup time, workers come in and clock out within 5 min of their assigned shift
 --All comments after this point are AI explaining the data it is inserting into tables, not us explaining db architecture. 
 
@@ -195,6 +195,7 @@ GO
 
 
 
+<<<<<<< HEAD
 -- Product Map: 1=Taco, 2=Burrito, 3=Quesadilla, 4=Horchata, 5=Coke
 -- * Burrito (Product 2) is entirely omitted for PurchaseIDs >= 589
 INSERT INTO LineItems (Quantity, UnitPrice, ProductID, PurchaseID) VALUES 
@@ -384,3 +385,36 @@ INSERT INTO LineItems (Quantity, UnitPrice, ProductID, PurchaseID) VALUES
 (2,2.99,4,993),(2,5.99,3,993),(1,4.99,1,994),(2,5.99,3,994),(2,2.99,4,994),(2,5.99,3,995),(1,4.99,1,995),(2,2.99,5,996),(2,4.99,1,997),(3,5.99,3,997),
 (1,4.99,1,998),(2,5.99,3,998),(1,4.99,1,999),(3,2.99,5,999),(1,4.99,1,1000);
 GO
+=======
+-- 2025/2026 Orders (Products: 1=Taco, 3=Quesadilla, 4=Horchata, 5=Coke)
+(2, 5.99, 3, 21), (1, 2.99, 4, 21),                -- Purchase 21
+(1, 4.99, 1, 22), (1, 5.99, 3, 22), (1, 2.99, 5, 22),-- Purchase 22
+(3, 4.99, 1, 23),                                  -- Purchase 23
+(2, 5.99, 3, 24), (2, 2.99, 4, 24),                -- Purchase 24
+(1, 5.99, 3, 25),                                  -- Purchase 25
+(4, 4.99, 1, 26), (2, 2.99, 5, 26),                -- Purchase 26
+(1, 5.99, 3, 27), (1, 4.99, 1, 27), (2, 2.99, 4, 27),-- Purchase 27
+(2, 5.99, 3, 28), (1, 2.99, 5, 28),                -- Purchase 28
+(1, 4.99, 1, 29), (1, 2.99, 4, 29),                -- Purchase 29 (Bad rating order)
+(3, 5.99, 3, 30), (3, 2.99, 5, 30),                -- Purchase 30
+(1, 4.99, 1, 31), (1, 5.99, 3, 31),                -- Purchase 31
+(5, 4.99, 1, 32), (2, 2.99, 4, 32),                -- Purchase 32
+(2, 5.99, 3, 33),                                  -- Purchase 33
+(2, 4.99, 1, 34), (1, 2.99, 5, 34),                -- Purchase 34
+(1, 5.99, 3, 35), (1, 2.99, 4, 35),                -- Purchase 35
+(4, 4.99, 1, 36), (1, 5.99, 3, 36),                -- Purchase 36
+(1, 5.99, 3, 37),                                  -- Purchase 37
+(3, 4.99, 1, 38), (1, 2.99, 4, 38),                -- Purchase 38
+(2, 5.99, 3, 39), (2, 2.99, 5, 39),                -- Purchase 39
+(1, 4.99, 1, 40), (1, 5.99, 3, 40), (1, 2.99, 4, 40),-- Purchase 40
+(1, 5.99, 3, 41), (1, 2.99, 5, 41),                -- Purchase 41 (Bad rating order)
+(4, 4.99, 1, 42),                                  -- Purchase 42
+(2, 5.99, 3, 43), (1, 2.99, 4, 43),                -- Purchase 43
+(1, 4.99, 1, 44), (2, 5.99, 3, 44),                -- Purchase 44
+(3, 5.99, 3, 45), (3, 2.99, 5, 45),                -- Purchase 45
+(2, 4.99, 1, 46), (1, 2.99, 4, 46),                -- Purchase 46
+(1, 5.99, 3, 47), (1, 2.99, 5, 47),                -- Purchase 47
+(1, 4.99, 1, 48), (1, 5.99, 3, 48),                -- Purchase 48
+(5, 4.99, 1, 49), (2, 2.99, 4, 49),                -- Purchase 49
+(2, 5.99, 3, 50), (2, 2.99, 5, 50);                -- Purchase 50
+>>>>>>> c75171e8d8152b38d3a990a6e9641f36f6f98e67
